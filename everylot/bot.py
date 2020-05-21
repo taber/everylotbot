@@ -56,7 +56,7 @@ def main():
     # a chance to troubleshoot!
     
     metadata = el.get_streetview_metadata(api.config['streetview'])
-    if not metadata:
+    if metadata is False:
         logger.error("No imagery going on here :(")
         el.mark_as_no_imagery()
         return
