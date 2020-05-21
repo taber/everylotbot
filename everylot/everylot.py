@@ -22,9 +22,11 @@ from io import BytesIO
 import requests
 import json
 
+# this could be catastrophic but I'm gonna try it!!!!!
+
 # using random rather than strict id order
 QUERY = """SELECT
-    *
+    id, address, tweeted 
     FROM lots
     where {} = ? AND tweeted = 0 
     ORDER BY random() 
