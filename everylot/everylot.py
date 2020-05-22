@@ -218,3 +218,9 @@ class EveryLot(object):
             fov, pitch = 90, 30
 
         return fov, pitch
+    
+    def __str__(self):
+        return ""
+
+    def __repr__(self):
+        return self.lot
