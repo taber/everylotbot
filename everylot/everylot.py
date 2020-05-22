@@ -79,7 +79,8 @@ class EveryLot(object):
         params = {
             "location": self.streetviewable_location(key),
             "key": key,
-            "size": "1000x1000"
+            "size": "1000x1000",
+            "source": "outdoor"
         }
 
         params['fov'], params['pitch'] = self.aim_camera()
