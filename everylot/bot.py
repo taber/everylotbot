@@ -48,8 +48,8 @@ def main():
         logger.error('No lot found')
         return
 
-    logger.debug('%s addresss: %s zip: %s', el.lot['id'], el.lot.get('address'), el.lot.get('zip'))
-    logger.debug('db location %s,%s', el.lot['lat'], el.lot['lon'])
+    # logger.debug('%s addresss: %s zip: %s', el.lot['id'], el.lot.get('address'), el.lot.get('zip'))
+    # logger.debug('db location %s,%s', el.lot['lat'], el.lot['lon'])
 
     # for now, if it doesn't have imagery, we're gonna just mark it in the db
     # as "tweeted = 1" skip the process and give me
